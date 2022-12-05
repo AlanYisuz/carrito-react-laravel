@@ -3,6 +3,8 @@
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Api\ProductController;
+use App\Http\Controllers\Api\SaleController;
+use App\Http\Controllers\Api\KartController;
 /*
 |--------------------------------------------------------------------------
 | API Routes
@@ -24,4 +26,20 @@ Route::controller(ProductController::class)->group(function () {
     Route::put('/product/{id}','update');
     Route::get('/product/{id}','show');
     Route::delete('/product/{id}','destroy');
+});
+
+Route::controller(SaleController::class)->group(function () {
+    Route::get('/sales','index');
+    Route::post('/sale','store');
+    Route::put('/sale/{id}','update');
+    Route::get('/sale/{id}','show');
+    Route::delete('/sale/{id}','destroy');
+});
+
+Route::controller(KartController::class)->group(function () {
+    Route::get('/karts','index');
+    Route::post('/kart','store');
+    Route::put('/kart/{id}','update');
+    Route::get('/kart/{id}','show');
+    Route::delete('/kart/{id}','destroy');
 });

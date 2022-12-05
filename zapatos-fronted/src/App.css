@@ -39,3 +39,33 @@
 .read-the-docs {
   color: #888;
 } */
+
+.lista{
+  height: 100%;
+  width: 100%;
+  background-color: #ddd;
+  border:solid  black;
+  
+  display: flex;
+  justify-content: space-between;
+  padding: 30px;
+  box-sizing: border-box;
+}
+
+.contenedor{
+  background-color: #bbb;
+  width: 250px;
+  /* height: 100%; */
+  padding: 10px 20px;
+  box-sizing: border-box;
+}
+
+.contenedor img{
+  height: 100px;
+  width: 150px;
+}
+
+.imagen {
+  height: 100px;
+  width: 150px;
+}

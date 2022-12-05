@@ -43,7 +43,7 @@ function ShoesManList() {
       categoria: categoria,
       imagen: imagen,
     });
-
+    
     //navigate("/");
   };
 
@@ -177,13 +177,15 @@ function ShoesManList() {
                     zap.imagen
                   )
                 }
-                type="submit"
+                
               >
                 Confirmar compra
-              </button>
+              </button> 
             </div>
           </div>
         ))}
+         
+        
       </div>
 
       <div className="container-fluid p-5 bg-dark text-white">
